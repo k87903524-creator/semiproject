@@ -31,6 +31,7 @@ public class MemberController {
 	@PostMapping("/join")
 	public String join(MemberDTO memberDTO, Model model) {
 		
+		System.out.println(memberDTO);
 //		아이디 중복 확인 - DB에 이미 같은 아이디가 있다면 가입 불가
 //		?error=duplicate 파라미터를 붙여서 리다이렉트
 //		join.html에서 th:if="${param.error == 'duplicate'}"로
